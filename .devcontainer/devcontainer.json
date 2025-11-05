@@ -1,0 +1,19 @@
+{
+	"name": "Ubuntu with Java SDK and JFlex",
+	"build": {
+	  "dockerfile": "./Dockerfile",
+	  "context": "."
+	},
+	"workspaceFolder": "/workspaces/compilation",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/compilation,type=bind",
+	"customizations": {
+	  "vscode": {
+		"extensions": ["vscjava.vscode-java-pack","ms-vsliveshare.vsliveshare"],
+		"settings": {
+		  "terminal.integrated.defaultProfile.linux": "/bin/bash"
+		}
+	  }
+	},
+	"remoteUser": "root"
+  }
+  
